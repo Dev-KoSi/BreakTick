@@ -1,0 +1,234 @@
+body{
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(232, 208, 255);
+}
+
+button, svg{
+  cursor: pointer;
+}
+
+/* HOME PAGE STYLES */
+
+.home-page{
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page .home #txt{
+  font-size: 30px;
+  margin: 30px 0;
+  font-weight: bold;
+}
+
+.home-page .timers{
+  background-color: rgb(177, 94, 255);
+  padding: 10px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.home-page .timers button{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+#standard-1, #short-break-2, #long-break-3{
+  background-color:  white;
+}
+
+.home-page .clock{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(177, 94, 255);
+  padding: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.home-page .count-down{
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.home-page .ctrl span{
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-size: 20px;
+}
+
+.home-page .ctrl span:hover{
+  color: white;
+}
+
+.home-page #settings-icon{
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* SETTINGS STYLES */
+
+.settings-container{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.settings{
+  width: 600px;
+  background-color: white;
+  margin: 50px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.settings .header{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.settings .header .txt{
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.break-types{
+  padding: 20px 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.break-types #txt{
+  text-align: center;
+  font-size: 14px;
+}
+
+.break-types .standard{
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.break-types .standard .txt{
+  width: 100%;
+}
+
+.settings .break-types .short-break{
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.break-types .short-break .txt{
+  width: 100%;
+}
+
+.break-types .long-break{
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.break-types .long-break .txt{
+  width: 100%;
+}
+
+.settings .break-types input{
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(232, 208, 255);
+  padding: 10px ;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.font-container{
+  text-align: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.font-container #txt{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.font-container .fonts{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.font-container .fonts div{
+  border: 1px solid lightgray;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.font-container .fonts div:hover{
+  background-color: rgba(211, 211, 211, 0.586);
+}
+
+#first-font-1, #second-font-2, #third-font-3{
+  background-color: rgba(211, 211, 211, 0.586);
+}
+
+.color-container{
+  text-align: center;
+  padding: 20px 30px 20px 30px;
+}
+
+.color-container #txt{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.color-container .colors{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.color-container .colors div{
+  border: 1px solid lightgray;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-container .colors svg{
+  display: none;
+}
+
+#first-color-1, #second-color-2, #third-color-3{
+  display: block;
+}
