@@ -6,8 +6,8 @@ export function App() {
   const [settings, setSettings] = useState(false);
   const [startPause, setStartPause] = useState(false);
   const [timerSelected, setTimerSelected] = useState('1');
-  const [min, setMin] = useState(25);
-  const [sec, setSec] = useState(0)
+  let [min, setMin] = useState(25);
+  let [sec, setSec] = useState(0)
 
   const [standard, setStandard] = useState(25);
   const [shortBreak, setShortBreak] = useState(5);
@@ -110,7 +110,11 @@ export function App() {
             <div style={{backgroundColor: `${clockColor}`}} className="clock">
               <div>
               <div className="count-down">
-                {min >= 10 ? min : `0${min}`}:{sec >= 10 ? sec : `0${sec}`}
+                {min > 60 ? min = 60 : min >= 10 ? min : `0${min}`}
+                
+                :
+                
+                {sec > 60 ? sec = 60 : sec >= 10 ? sec : `0${sec}`}
               </div>
 
               <div className="ctrl">
