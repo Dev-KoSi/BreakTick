@@ -106,25 +106,27 @@ export function App() {
             </button>
           </div>
 
-          <div style={{backgroundColor: `${clockColor}`}} className="clock">
-            <div>
-            <div className="count-down">
-              {min >= 10 ? min : `0${min}`}:{sec >= 10 ? sec : `0${sec}`}
-            </div>
+          <div className='clock-container'>
+            <div style={{backgroundColor: `${clockColor}`}} className="clock">
+              <div>
+              <div className="count-down">
+                {min >= 10 ? min : `0${min}`}:{sec >= 10 ? sec : `0${sec}`}
+              </div>
 
-            <div className="ctrl">
-              {!startPause && <span onClick={() => {
-                setStartPause(true);
-              }}>
-                Start
-              </span>}
-              
-              {startPause && <span onClick={() => {
-                setStartPause(false);
-              }}>
-                Pause
-              </span>}
-            </div>
+              <div className="ctrl">
+                {!startPause && <span onClick={() => {
+                  setStartPause(true);
+                }}>
+                  Start
+                </span>}
+                
+                {startPause && <span onClick={() => {
+                  setStartPause(false);
+                }}>
+                  Pause
+                </span>}
+              </div>
+              </div>
             </div>
           </div>
 
@@ -217,8 +219,8 @@ export function App() {
                 Aa
               </div>
 
-              <div style={{fontFamily: 'fantasy'}} id={`third-font-${fontSelected}`} className="font-3" onClick={() => {
-                document.body.style.fontFamily = 'fantasy';
+              <div style={{fontFamily: 'sans-serif'}} id={`third-font-${fontSelected}`} className="font-3" onClick={() => {
+                document.body.style.fontFamily = 'sans-serif';
 
                 setFontSelected('3');
 
